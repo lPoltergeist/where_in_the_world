@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
     }
         
     a {
@@ -20,6 +19,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.colors.background};
         color: ${({ theme }) => theme.colors.text};
+        transition: all 0.3s ease-in-out;
     }
-   
 `

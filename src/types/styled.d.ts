@@ -6,6 +6,8 @@ declare module 'styled-components' {
             background: string
             text: string
             elements: string
+            homePageText: string
+            detailPageText: string
         }
     }
 }

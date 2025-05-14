@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.div`
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.elements};
     color: ${({ theme }) => theme.colors.text};
     display: flex;
     justify-content: space-between;
@@ -23,4 +23,9 @@ export const ThemeButton = styled.button`
     gap: 10px;
     font-size: 18px;
     font-weight: 600;
+    transition: all 0.2s ease-in-out;
+
+    &&:hover {
+        transform: scale(1.1);
+    }
 `

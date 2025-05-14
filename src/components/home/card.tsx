@@ -1,5 +1,6 @@
 import { CardContainer, CardContent, CardInformation, CardText, Flag } from '@/styles/home/card'
 import { CardType } from '@/types/card'
+import { i } from 'framer-motion/client'
 import React from 'react'
 
 const FlagCard = ({ CountryName, Population, Region, Capital, CountryFlag }: CardType) => {
@@ -11,7 +12,7 @@ const FlagCard = ({ CountryName, Population, Region, Capital, CountryFlag }: Car
                 <h2>{CountryName}</h2>
                 <CardInformation>
                     <CardText>
-                        <strong>Population:</strong> <a>{Population}</a>
+                        <strong>Population:</strong> <a>{new Intl.NumberFormat('pt-BR').format(Population)}</a>
                     </CardText>
                     <CardText>
                         <strong>Region:</strong> <a>{Region}</a>

@@ -5,5 +5,7 @@ interface CustomTheme extends DefaultTheme {
         background: string;
         text: string;
         elements: string;
+        homePageText: string,
+        detailPageText: string,
     }
 }

@@ -4,6 +4,7 @@ import { GlobalStyle } from '../styles/globalStyles';
 import Navbar from '@/components/navbar/navbar';
 import { ThemeProvider as CustomThemeProvider, useTheme } from '@/contexts/ThemeContext';
 import { ThemeProvider } from 'styled-components';
+import { nunitoSans } from '@/styles/fonts/fonts';
 
 export default function App(props: AppProps) {
 
@@ -19,10 +20,12 @@ function WithTheme({ Component, pageProps }: AppProps) {
   const { theme } = useTheme();
 
   return (
-    <ThemeProvider theme={theme}>
+    <div className={nunitoSans.className}>
+      <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
       <Component {...pageProps} />
     </ThemeProvider>
+    </div>
   )
 }

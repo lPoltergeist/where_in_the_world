@@ -38,4 +38,5 @@ export const CardInformation = styled.div`
 
 export const CardText = styled.p`
     margin-bottom: 10px;
+    font-size: ${({ theme }) => theme.colors.homePageText};
 `
