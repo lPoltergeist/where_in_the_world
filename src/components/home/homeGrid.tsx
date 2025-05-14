@@ -6,10 +6,11 @@ import AnimatedCard from '@/utils/AnimatedCard'
 import Filter from './filter'
 
 const HomeSection = ({ FlagData }: FlagData) => {
-
     const [filteredData, setFilteredData] = useState(FlagData);
     const [searchQuery, setSearchQuery] = useState('');
     const [selectRegion, setSelectRegion] = useState('');
+
+  
 
     useEffect(() => {
         const handleFilter = () => {

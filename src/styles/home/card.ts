@@ -35,8 +35,3 @@ export const CardInformation = styled.div`
     flex-direction: column;
     height: 100px;
 `
-
-export const CardText = styled.p`
-    margin-bottom: 10px;
-    font-size: ${({ theme }) => theme.colors.homePageText};
-`
