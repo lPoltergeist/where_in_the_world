@@ -14,12 +14,11 @@ const HomeSection = ({ FlagData }: FlagData) => {
 
     useEffect(() => {
         const handleFilter = () => {
-            let filtered = FlagData.filter(country => {
+            const filtered = FlagData.filter(country => {
                 const matchesName = country.name.toLowerCase().includes(searchQuery.toLowerCase());
                 const matchesRegion = selectRegion ? country.region.toLowerCase() === selectRegion.toLowerCase() : true;
                 return matchesName && matchesRegion;
             })
-
 
             setFilteredData(filtered);
         };

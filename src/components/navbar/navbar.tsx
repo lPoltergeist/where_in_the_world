@@ -5,7 +5,7 @@ import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 import { useTheme } from '@/contexts/ThemeContext'
 
 const Navbar = () => {
-  const [isLight, setIsLight] = useState<boolean | null>(null)
+  const [isLight, setIsLight] = useState<boolean | []>([])
 
   const { toggleTheme } = useTheme()
 

@@ -1,7 +1,7 @@
 import { useInView, motion } from 'framer-motion';
 import React, { useRef } from 'react'
 
-const AnimatedCard = ({children}: any) => {
+const AnimatedCard = ({children}: {children: React.ReactNode}) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false });
 

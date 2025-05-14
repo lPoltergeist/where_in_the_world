@@ -1,7 +1,7 @@
 import { FilterSection, InputWrapper, NameInput, SelectInput } from '@/styles/home/filter'
 import { FilterProps } from '@/types/filter'
-import React, { useState } from 'react'
-import { IoSearchCircleOutline, IoSearchOutline } from 'react-icons/io5'
+import React from 'react'
+import { IoSearchOutline } from 'react-icons/io5'
 
 const Filter = ({searchQuery, setSearchQuery, selectRegion, setSelectRegion}: FilterProps) => {
   
